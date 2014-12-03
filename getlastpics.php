@@ -23,7 +23,7 @@ if($debug==1) {
 }
 
 // The database connection
-$ts_mycnf = parse_ini_file("/data/project/ash-dev/replica.my.cnf");
+$ts_mycnf = parse_ini_file("/data/project/lastpics/replica.my.cnf");
 
 try {
         $bdd = new PDO('mysql:host=commonswiki.labsdb;dbname=commonswiki_p', $ts_mycnf['user'], $ts_mycnf['password']);
